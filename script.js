@@ -51,29 +51,30 @@ function playerRoll(playerId){
     let player1ScoreCard = document.getElementById('scoreCardPlayer1');
     let player2ScoreCard = document.getElementById('scoreCardPlayer2');
 
+
     showDiceValue(score);
 
     if(playerId == 1){
         player1Score += score;
-        player1ScoreCard.innerHTML = player1Score;
-
         if(player1Score == 30 || player1Score >30){
             alert("Player 1 win!");
             window.location.reload();
         }else{
             playerPlayNext(playerId);
         }
+        player1ScoreCard.innerHTML = player1Score;
 
     } else {
         player2Score += score;
-        player2ScoreCard.innerHTML = player2Score;
         if(player2Score == 30 || player2Score >30){
             alert("Player 2 win!");
             window.location.reload();
         }else{
             playerPlayNext(playerId);
         }
+        player2ScoreCard.innerHTML = player2Score;
     }
+
 
 }
 
