@@ -1,0 +1,46 @@
+*{
+    font-family: 'Poppins';
+    font-size: 30px;
+}
+
+.container {
+    margin: auto;
+    width: 50%;
+    padding:10px;
+    text-align: center;
+}
+
+.welcomeNote {
+    color: green;
+}
+
+.play-ground{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.play-ground > div {
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+    padding: 20px;
+    font-size: 15px;
+}
+
+img{
+    margin-top: 20px;
+}
+
+.active_btn {
+    background-color: green;
+    color: white;
+    border: 0px;
+}
+
+.reset_btn{
+    margin-top: 100px;
+    background-color: rgb(187, 58, 56);
+    color: aliceblue;
+    border: 0px;
+    padding: 10px;
+}

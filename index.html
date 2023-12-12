@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <title>Dice GamePlay</title>
+</head>
+<body>
+    <div class="container">
+        <p class="welcomeNote">Let's Play Dice</p>
+        <h3 id="playerName"></h3>
+
+        <div class="play-ground">
+            <div>
+                <p>Player 1</p>
+                <h2 id="scoreCardPlayer1">0</h2>
+                <button id="player-1-roll" onclick="playerRoll(1)">Roll Now</button>
+            </div>
+            <div>
+                <img src="assets/images/1.JPG" id="diceImage" width="100" alt=""> <br>
+                <button class="reset_btn" onclick="window.location.reload();">Reset</button>
+            </div>
+            <div>
+                <p>Player 2</p>
+                <h2 id="scoreCardPlayer2">0</h2>
+                <button id="player-2-roll" onclick="playerRoll(2)">Roll Now</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
